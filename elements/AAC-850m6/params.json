@@ -1,0 +1,43 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 16,
+        "width": 16
+    },
+    "display": "Alphabet images",
+    "fields": {
+        "AAF": {
+            "caption": "first name",
+            "doc": "user enter first name ",
+            "editor": "DynamicValue",
+            "name": "first_name",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAG": {
+            "caption": "last name",
+            "doc": "user enter last name",
+            "editor": "DynamicValue",
+            "name": "last_name",
+            "rank": 1,
+            "value": "text"
+        }
+    },
+    "icon": "ion-ios-contact-outline",
+    "property_applications": {
+        "MinWidth": true,
+        "resizable": true
+    },
+    "states": {
+        "AAE": {
+            "caption": "result ",
+            "doc": "The alphabet image matching the extracted letter",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "result",
+            "value": "image"
+        }
+    }
+}
