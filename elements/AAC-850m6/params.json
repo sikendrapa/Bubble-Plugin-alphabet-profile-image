@@ -2,41 +2,35 @@
     "add_is_visible": true,
     "category": "visual elements",
     "default_dim": {
-        "height": 16,
-        "width": 16
+        "height": 100,
+        "width": 100
     },
-    "display": "Alphabet images",
+    "display": "Alphabet Image",
     "fields": {
         "AAF": {
-            "caption": "first name",
-            "doc": "user enter first name ",
+            "caption": "first_text",
+            "doc": "The text from which the plugin will extract the first letter, e.g. user's first name",
             "editor": "DynamicValue",
-            "name": "first_name",
+            "name": "first_text",
             "rank": 0,
-            "value": "text"
-        },
-        "AAG": {
-            "caption": "last name",
-            "doc": "user enter last name",
-            "editor": "DynamicValue",
-            "name": "last_name",
-            "rank": 1,
             "value": "text"
         }
     },
     "icon": "ion-ios-contact-outline",
     "property_applications": {
+        "Background": false,
+        "Border": false,
         "MinWidth": true,
         "resizable": true
     },
     "states": {
         "AAE": {
-            "caption": "result ",
+            "caption": "current image ",
             "doc": "The alphabet image matching the extracted letter",
             "initialization_code": {
                 "fn": "function(properties, context) {\n\n\n\n}"
             },
-            "name": "result",
+            "name": "current_value",
             "value": "image"
         }
     }
